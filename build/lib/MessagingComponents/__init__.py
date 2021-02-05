@@ -36,7 +36,7 @@ def create_carousel(channel, carousel_data):
                 buttons.append(
                     {"type": button["type"], "url": button["url"], "title": button["title"], "extension": button.get("messanger_extensions", True)})
             crw.add_element(image_url=card["image_url"], title=card["title"], default_action_url=card.get("default", ""),
-                            buttons=card["button"],
+                            buttons=buttons,
                             caption=card["caption"]
                             )
         return crw.get_message()
@@ -47,10 +47,10 @@ def create_carousel(channel, carousel_data):
             buttons = []
             for button in card["button"]:
                 buttons.append({"type": button["type"], "url": button["url"], "title": button["title"],
-                                "webview_height_ratio": "full", "messanger_extensions": button.get("messanger_extensions", True)})
+                                "webview_height_ratio": "full"})
             crfb.add_element(title=card["title"], subtitle=card["caption"],
                              image_url=card["image_url"],
-                             buttons=card["button"], messanger_extensions=card["button"]["messanger_extensions"])
+                             buttons=buttons, messanger_extensions=card.get("messanger_extensions", True))
         return crfb.get_message()
 
 
