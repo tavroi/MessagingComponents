@@ -4,6 +4,7 @@ MessagingComponents/Button.py
 MessagingComponents/Carousel.py
 MessagingComponents/Constants.py
 MessagingComponents/QuickReply.py
+MessagingComponents/TextFormatting.py
 MessagingComponents/__init__.py
 MessagingComponents.egg-info/PKG-INFO
 MessagingComponents.egg-info/SOURCES.txt

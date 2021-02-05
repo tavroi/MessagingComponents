@@ -1,6 +1,6 @@
 ## How to install Messaging Component
 
-#### **Step 1**: Download the wheel file using "https://github.com/tavroi/MessagingComponents/raw/main/dist/MessagingComponents-0.1.0-py3-none-any.whl".
+#### **Step 1**: Download the wheel file using "".
 #### **Step 2**: open a cmd and change the working directory to folder where you have downloaded the wheel file.
 #### **Step 3**: Pip install MessagingComponents-0.1.0-py3-none-any.whl
 
